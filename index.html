@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Launching NED Tool</title>
+  <style>
+    body {
+      background-color: #ffffff;
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .spinner {
+      border: 6px solid #f3f3f3;
+      border-top: 6px solid #0077cc;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+      margin: 30px 0;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <h2>Launching the NED Fragility Tool...</h2>
+  <div class="spinner"></div>
+  <p>This may take ~20 seconds.<br>Hang tight while we start the server.</p>
+
+  <script>
+    setTimeout(function() {
+      window.location.href = "https://mybinder.org/v2/gh/meladly1/NED01/HEAD?urlpath=voila/render/app.ipynb";
+    }, 20000); // 20 seconds
+  </script>
+</body>
+</html>
