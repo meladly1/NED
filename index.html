@@ -33,7 +33,7 @@
 <body>
   <h2>Launching the NED Fragility Tool...</h2>
   <div class="spinner"></div>
-  <p>This may take ~30 seconds.<br>Hang tight while we start the server.</p>
+  <p>This may take <strong>~30 seconds</strong>.<br>Hang tight while we start the server.</p>
 
   <!-- Hidden iframe to start Binder backend immediately -->
   <iframe id="binderFrame" style="display:none;" src="https://mybinder.org/v2/gh/meladly1/NED01/HEAD?urlpath=voila/render/app.ipynb"></iframe>
@@ -42,7 +42,7 @@
     // Redirect after 20 seconds
     setTimeout(function() {
       window.location.href = "https://mybinder.org/v2/gh/meladly1/NED01/HEAD?urlpath=voila/render/app.ipynb";
-    }, 5000);
+    }, 10000);
   </script>
 </body>
 </html>
